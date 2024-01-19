@@ -21,7 +21,7 @@ This may be improved in future versions, as it should be easily fixed with addit
 
 You will need to install all packages in the requirements.txt file. 
 
-If using Anaconda, create a clean environment and activate it. 
+If using Anaconda, create a clean environment and activate it. (Use Miniconda to save dirskspace)
 In Anaconda Prompt, type the following (replacing the path to FSCT and your desired environment name as needed):
 
 ```shell
@@ -30,7 +30,11 @@ conda create --name YOUR_ENVIRONMENT_NAME_HERE python==3.9
 conda activate YOUR_ENVIRONMENT_NAME_HERE
 conda install pip
 pip install -r requirements.txt
+conda install -c conda-forge hdbscan==0.8.28
+pip install -r requirements.txt
 ```
+
+the fix for hdbscan demands the requirements.txt to be called again
 
 This should hopefully install all required packages for you.
 These are the instructions for Windows 10 and Linux.
@@ -53,6 +57,14 @@ this will contain the following outputs.
 
 Start with small plots containing at least some trees. The tree measurement code will currently cause an error if it
 finds no trees in the point cloud.
+
+## Usefull Python basics
+
+set your directory an run the run.py file
+```shell
+cd C:\FSCT\scripts
+python run.py
+```
 
 ## FSCT Outputs
 
