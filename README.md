@@ -60,7 +60,7 @@ finds no trees in the point cloud.
 
 ## Usefull Python basics
 
-set your directory an run the run.py file
+set your directory an run the run.py file from anconda prompt
 ```shell
 cd C:\FSCT\scripts
 python run.py
